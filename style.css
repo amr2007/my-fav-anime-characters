@@ -1,0 +1,436 @@
+body {
+  background-color: #0b1220;
+  color: #e6eef8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.name {
+  color: #94a3b8;
+}
+
+.image {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.peragraph {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+.link a {
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.3s;
+}
+
+.link a:hover {
+  transform: scale(1.2);
+}
+
+/* IMDB */
+.imdb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f5c518;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+
+}
+
+.imdb-badge span {
+  font-size: 1rem;
+}
+
+/* wikipedia */
+.wiki-link i {
+  color: #36c;
+}
+
+.wiki-link i:hover {
+  color: #fff;
+}
+
+/* Youtube */
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-youtube:hover {
+  color: #ff4d4d;
+}
+
+/* cherecter name colouring by class */
+.Saitama {
+  color: gold;
+}
+
+.Igris {
+  color: crimson;
+}
+
+.Goku {
+  color: orange;
+}
+
+.Sukuna {
+  color: purple;
+}
+
+.Guts {
+  color: silver;
+}
+
+.nav-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  background: #ffd166;
+  /* gold button */
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  background: #f5c518;
+  transform: scale(1.1);
+}
+
+/* Login form styling */
+/* LOGIN — layout: center the form on the screen */
+.Login-form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* card */
+.Login-form form {
+  width: 360px;
+  background: #0f1724;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+}
+
+/* title */
+.Login-form h2 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  color: #ffd166;
+  letter-spacing: 0.02em;
+}
+
+/* labels */
+.Login-form label {
+  display: block;
+  margin: 0.6rem 0 0.25rem 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+/* inputs */
+.Login-form input[type="email"],
+.Login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #e6eef8;
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.Login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 209, 102, 0.12);
+  transform: translateY(-1px);
+}
+
+.Login-form ::placeholder {
+  color: #94a3b8;
+}
+
+/* submit */
+.Login-form .submit {
+  width: 100%;
+  padding: 11px 12px;
+  background: #ffd166;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.Login-form .submit:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(255, 209, 102, 0.12);
+}
+
+/* social buttons */
+.Login-form button[type="button"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: #e6eef8;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.16s, transform 0.12s;
+}
+
+.Login-form button[type="button"]:hover {
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateY(-2px);
+}
+
+/* text + link */
+.Login-form p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+.Login-form a {
+  color: #ffd166;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.Login-form a:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 420px) {
+  .Login-form form {
+    width: 100%;
+    padding: 1.25rem;
+  }
+}
+
+/* Sign up form styling */
+/* SIGNUP FORM STYLES */
+
+/* Center form on screen */
+.Signup-form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Card style */
+.Signup-form form {
+  width: 360px;
+  background: #0f1724;
+  /* dark card background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+}
+
+/* Title */
+.Signup-form h2 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-size: 1.4rem;
+  color: #ffd166;
+  /* gold accent */
+  letter-spacing: 0.02em;
+}
+
+/* Labels */
+.Signup-form label {
+  display: block;
+  margin: 0.6rem 0 0.25rem 0;
+  color: #cbd5e1;
+  /* muted gray */
+  font-size: 0.9rem;
+}
+
+/* Input fields */
+.Signup-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #e6eef8;
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+/* Focus effect */
+.Signup-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 209, 102, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Placeholder color */
+.Signup-form ::placeholder {
+  color: #94a3b8;
+}
+
+/* Submit button */
+.Signup-form button[type="submit"] {
+  width: 100%;
+  padding: 11px 12px;
+  background: #ffd166;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.Signup-form button[type="submit"]:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(255, 209, 102, 0.12);
+}
+
+/* Social buttons (Google/GitHub) */
+.Signup-form button[type="button"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: #e6eef8;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* space between icon and text */
+  transition: background 0.16s, transform 0.12s;
+}
+
+.Signup-form button[type="button"]:hover {
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateY(-2px);
+}
+
+/* Text + links */
+.Signup-form p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+.Signup-form a {
+  color: #ffd166;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.Signup-form a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweak */
+@media (max-width: 420px) {
+  .Signup-form form {
+    width: 100%;
+    padding: 1.25rem;
+  }
+}
+
+.Signup-form .login-link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Index page */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #0f1724;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title {
+  color: #ffd166;
+}
